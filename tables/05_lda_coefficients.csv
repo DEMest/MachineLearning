@@ -1,0 +1,8 @@
+Модель,intercept,bill_length_mm,bill_depth_mm,flipper_length_mm,body_mass_g,Accuracy на контроле
+Все 4 признака,-61.368758,1.583116,-0.754051,0.121591,-0.005004,1.000000
+bill_length_mm + bill_depth_mm,-36.714881,1.405617,-1.406797,,,1.000000
+bill_length_mm + flipper_length_mm,-45.299700,1.183534,,-0.039348,,0.981818
+bill_length_mm + body_mass_g,-49.973602,1.556164,,,-0.005168,0.981818
+bill_depth_mm + flipper_length_mm,-26.693991,,-0.183609,0.151442,,0.727273
+bill_depth_mm + body_mass_g,-3.656436,,0.170907,,-0.000079,0.690909
+flipper_length_mm + body_mass_g,-31.021226,,,0.179696,-0.001210,0.654545
