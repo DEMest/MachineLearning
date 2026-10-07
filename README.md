@@ -1,5 +1,9 @@
 # MachineLearning — задание 1
 
+[![Открыть в Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DEMest/MachineLearning/blob/main/MachineLearning_Colab.ipynb)
+
+**[Ноутбук с кодом, таблицами и рисунками по пунктам [1]–[8]](MachineLearning_Colab.ipynb)** можно открыть в Google Colab прямо из GitHub и выполнить целиком через «Среда выполнения → Выполнить все».
+
 Решение выполнено на [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/). В исходной таблице 344 наблюдения трёх видов пингвинов. Для анализа выбраны четыре количественных измерения: длина и глубина клюва, длина ласта и масса тела. Исходный CSV сохранён в [`data/penguins.csv`](data/penguins.csv); источник файла — [официальный репозиторий palmerpenguins](https://github.com/allisonhorst/palmerpenguins/blob/main/inst/extdata/penguins.csv).
 
 **[Открыть отчёт с таблицами, графиками и пояснениями по пунктам [2]–[8]](REPORT.md).**
