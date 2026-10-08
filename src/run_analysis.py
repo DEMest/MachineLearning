@@ -283,13 +283,13 @@ def main() -> None:
     x_comparison, y_comparison = comparison_pair
     models = {
         "LDA": make_pipeline(StandardScaler(), LinearDiscriminantAnalysis()),
-        "SVM (RBF)": make_pipeline(StandardScaler(), SVC(kernel="rbf", C=1.0, gamma="scale")),
+        "SVM (линейный)": make_pipeline(StandardScaler(), SVC(kernel="linear")),
         "Логистическая регрессия": make_pipeline(StandardScaler(), LogisticRegression(max_iter=2000)),
         "Наивный Байес": make_pipeline(StandardScaler(), GaussianNB()),
     }
     file_stems = {
         "LDA": "lda",
-        "SVM (RBF)": "svm_rbf",
+        "SVM (линейный)": "svm_linear",
         "Логистическая регрессия": "logistic_regression",
         "Наивный Байес": "gaussian_naive_bayes",
     }
@@ -469,7 +469,7 @@ def main() -> None:
         "",
         "Для всех методов используются глубина клюва и длина ласта, одинаковые обучение и контроль. "
         "Эта пара сильнее перекрывает классы, поэтому сравнение методов на ней информативнее. "
-        "SVM использует радиальное ядро (RBF), C=1; наивный Байес — гауссовскую модель. "
+        "SVM использует линейное ядро и строит прямую границу; наивный Байес — гауссовскую модель. "
         "Масштабирование обучено только на обучающей части.",
     ]
     for name in models:

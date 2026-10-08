@@ -3,10 +3,10 @@ LDA,Adelie,Adelie,35
 LDA,Adelie,Chinstrap,3
 LDA,Chinstrap,Adelie,12
 LDA,Chinstrap,Chinstrap,5
-SVM (RBF),Adelie,Adelie,35
-SVM (RBF),Adelie,Chinstrap,3
-SVM (RBF),Chinstrap,Adelie,15
-SVM (RBF),Chinstrap,Chinstrap,2
+SVM (линейный),Adelie,Adelie,36
+SVM (линейный),Adelie,Chinstrap,2
+SVM (линейный),Chinstrap,Adelie,14
+SVM (линейный),Chinstrap,Chinstrap,3
 Логистическая регрессия,Adelie,Adelie,36
 Логистическая регрессия,Adelie,Chinstrap,2
 Логистическая регрессия,Chinstrap,Adelie,12
