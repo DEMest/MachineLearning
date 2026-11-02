@@ -1,4 +1,19 @@
-# MachineLearning — задание 1
+# MachineLearning
+
+## Задание 2. LDA
+
+[![Открыть в Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DEMest/MachineLearning/blob/main/Task2_LDA_Colab.ipynb)
+
+**[Ноутбук с кодом, таблицами, рисунками и выводами по пунктам [1]–[9]](Task2_LDA_Colab.ipynb)** открывается в Google Colab прямо из GitHub и выполняется целиком через «Среда выполнения → Выполнить все» (около 5–10 минут).
+
+Датасет df1 генерируется в ноутбуке через `make_blobs`: три класса по 1000 объектов и четыре непрерывных признака. Из него строятся df2 … df10k, в которых объекты класса 0 повторены 2 … 10 000 раз. Дальше на паре классов 0–1 и паре признаков x1–x4:
+
+1. LDA и линейный SVM для каждого датасета: решающая функция, зоны классов и объекты.
+2. Центр отрезка между центрами масс, общий центр масс и точка пересечения границы LDA с отрезком в зависимости от числа повторов.
+3. ROC, PR и PR-gain с AUROC, AUPRC и AUPRGC для двух целевых классов.
+4. Кросс-валидация на df10k (3–100 фолдов) с CI95 для AUROC и AUPRC.
+
+## Задание 1. Palmer Penguins
 
 [![Открыть в Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DEMest/MachineLearning/blob/main/MachineLearning_Colab.ipynb)
 
@@ -8,7 +23,7 @@
 
 **[Открыть отчёт с таблицами, графиками и пояснениями по пунктам [2]–[8]](REPORT.md).**
 
-## Как устроено решение
+### Как устроено решение
 
 1. Пункт [1]: выбор Palmer Penguins и четырёх измерений.
 2. Пункт [2]: размерность, классы, пропуски, описательная статистика, [отфильтрованный CSV](data/penguins_filtered.csv).
@@ -21,7 +36,7 @@
 
 Все числа и иллюстрации создаёт [`src/run_analysis.py`](src/run_analysis.py). Таблицы сохраняются в `tables/`, рисунки — в `figures/`. Методика, формулы и ограничения оценки описаны рядом с результатами в отчёте.
 
-## Воспроизведение
+### Воспроизведение
 
 Нужен Python 3.10 или новее. Из корня репозитория:
 
